@@ -28,40 +28,6 @@ Lanka Explorer is a responsive, five-page mini project for discovering and plann
 - **Currency:** [Frankfurter](https://www.frankfurter.dev/) (no key).
 - **Maps:** [Leaflet](https://leafletjs.com/) + [OpenStreetMap](https://www.openstreetmap.org/copyright).
 
-See [`API-NOTES.md`](API-NOTES.md) for endpoints, response fields and failure handling. See [`ASSET-CREDITS.md`](ASSET-CREDITS.md) for image sources.
-
-## Run locally
-
-`fetch()` needs an HTTP server; do not open `index.html` directly as a `file://` URL.
-
-### VS Code Live Server
-
-1. Open the `lanka-explorer` folder in VS Code.
-2. Install the **Live Server** extension if needed.
-3. Right-click `index.html` → **Open with Live Server**.
-
-### Python
-
-From this folder, run:
-
-```bash
-python -m http.server 5500
-```
-
-Then open <http://localhost:5500/>.
-
-## Deploy to GitHub Pages
-
-This folder is already a static-site root: `index.html`, the other HTML pages, `css/`, `js/`, `data/` and `images/` are at the top level. A Pages workflow is included at `.github/workflows/pages.yml`.
-
-1. Create a **public** repository on GitHub named `lanka-explorer` (or choose your own repository name).
-2. Upload the **contents of this folder** to the repository root. Do not upload an extra enclosing `lanka-explorer` folder; `index.html` must be at the repo root.
-3. In the repository, open **Settings → Pages**. Set **Build and deployment → Source** to **GitHub Actions**.
-4. The workflow deploys on each push to `main`. Open **Actions** and wait for the Pages workflow to finish successfully.
-5. GitHub will show the published address, usually `https://YOUR-USERNAME.github.io/lanka-explorer/`.
-6. Open that address on a phone and test the navigation, maps, weather, currency, details links and saved trip. Add the exact URL to `Hosted Link.txt` and this README.
-
-All internal links and fetch paths are relative so the project works from a GitHub Pages project subpath. The browser still needs an internet connection for Open-Meteo, Frankfurter, Leaflet, Google Fonts and map tiles.
 
 ## Project structure
 
