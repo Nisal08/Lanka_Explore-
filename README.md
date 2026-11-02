@@ -14,19 +14,7 @@ Lanka Explorer is a responsive, five-page mini project for discovering and plann
 4. Verify current attraction fees with official sources. Values in this project are estimates for a class demo, not official quotes.
 5. Re-run Lighthouse on your deployed site and update the table below if your scores differ. The included results were measured on the local preview, so public-hosting/network conditions may change them.
 
-## Team
 
-| Group member | Role | Main contribution |
-| --- | --- | --- |
-| `[Member 1 — replace]` | Project Lead | Planning, folder structure and integration |
-| `[Member 2 — replace]` | Content & Data Lead | Destination research and JSON data |
-| `[Member 3 — replace]` | UI & Front-end Lead | Page layout, visual design and responsive CSS |
-| `[Member 4 — replace]` | Testing & APIs Lead | API integration, testing and documentation |
-
-**Group name:** `[Add your group name]`  
-**Tagline:** Discover the Pearl of the Indian Ocean.
-
-> If your group has three people, combine Content & Data with Testing & APIs. Change the roles to match what each person actually did.
 
 ## Features
 
