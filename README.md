@@ -4,18 +4,6 @@
 
 Lanka Explorer is a responsive, five-page mini project for discovering and planning a trip around Sri Lanka. It brings together semantic HTML, CSS Grid and Flexbox, JavaScript, JSON data, browser storage, public APIs and interactive maps.
 
-> **Live site:** add your published URL to [`Hosted Link.txt`](Hosted%20Link.txt) after deployment.
-
-## Before submitting — personalise these items
-
-1. Replace the four sample names and role labels on `about.html` with your real group members and roles.
-2. Edit the group name, names, roles and individual reflections in this README and `reflections/`.
-3. Update `Hosted Link.txt` after GitHub Pages is live.
-4. Verify current attraction fees with official sources. Values in this project are estimates for a class demo, not official quotes.
-5. Re-run Lighthouse on your deployed site and update the table below if your scores differ. The included results were measured on the local preview, so public-hosting/network conditions may change them.
-
-
-
 ## Features
 
 - Five linked pages: Home, Destinations, Details, My Trip and About.
