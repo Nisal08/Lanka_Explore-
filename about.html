@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta name="description" content="Meet the Lanka Explorer mini-project team and send a sample Sri Lanka trip enquiry.">
+  <title>About — Lanka Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Lanka Explorer home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17m0 7c-8 0-12-5-12-13 8 0 12 4 12 12Zm0-4c0-8 4-12 12-12 0 8-4 12-12 12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 34h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Lanka <strong>Explorer</strong></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false"><span class="menu-icon" aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><ul><li><a class="nav-link" href="index.html">Explore</a></li><li><a class="nav-link" href="destinations.html">Destinations</a></li><li><a class="nav-link trip-nav-link" href="trip.html">My Trip<span class="trip-count" aria-label="saved places"></span></a></li><li><a class="nav-link active" href="about.html" aria-current="page">About</a></li><li><button class="theme-toggle" type="button" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button></li></ul></nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell inner-page about-page">
+    <section class="about-hero" aria-labelledby="page-title">
+      <div class="about-hero-copy"><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Made for the curious</p><h1 id="page-title">A better way to say <em>“let's go.”</em></h1><p>Lanka Explorer is a student-built travel guide for people who want to experience more of Sri Lanka — without losing the joy in planning it.</p></div>
+      <div class="about-hero-note"><span class="note-star" aria-hidden="true">✳</span><p>Our island is full of contrasts: ancient and alive, quiet and colourful, familiar and surprising.</p><span class="note-signature">— The Lanka Explorer team</span></div>
+    </section>
+
+    <section class="about-story section-block" aria-labelledby="story-title">
+      <div><p class="eyebrow"><span class="eyebrow-line"></span> Our little idea</p><h2 id="story-title">A pocket-sized guide to a <em>big-hearted island.</em></h2></div>
+      <div class="story-copy"><p>We built Lanka Explorer as a practical starting point for discovering the Pearl of the Indian Ocean. Search the destinations, learn a little about each place, check the weather and make a simple route of your own.</p><p>This mini project brings together semantic HTML, responsive CSS, JavaScript, JSON data, browser storage and a few public APIs. It is a learning project, so always verify travel details with official sources before a real visit.</p></div>
+    </section>
+
+    <section id="team" class="team-section section-block" aria-labelledby="team-title">
+      <div class="section-heading section-heading-bottom"><div><p class="eyebrow"><span class="eyebrow-line"></span> People behind the project</p><h2 id="team-title">A small team with <em>big island energy.</em></h2></div><p class="section-note">Replace the sample labels below with your real names and roles before submission.</p></div>
+      <div class="team-grid">
+        <article class="team-card"><div class="team-avatar avatar-one" aria-hidden="true">01</div><div><p class="team-role">Project Lead</p><h3>Your name here</h3><p class="team-placeholder">Replace with a group member</p></div></article>
+        <article class="team-card"><div class="team-avatar avatar-two" aria-hidden="true">02</div><div><p class="team-role">Content &amp; Data</p><h3>Your name here</h3><p class="team-placeholder">Replace with a group member</p></div></article>
+        <article class="team-card"><div class="team-avatar avatar-three" aria-hidden="true">03</div><div><p class="team-role">UI &amp; Front-end</p><h3>Your name here</h3><p class="team-placeholder">Replace with a group member</p></div></article>
+        <article class="team-card"><div class="team-avatar avatar-four" aria-hidden="true">04</div><div><p class="team-role">Testing &amp; APIs</p><h3>Your name here</h3><p class="team-placeholder">Replace with a group member</p></div></article>
+      </div>
+    </section>
+
+    <section id="enquiry" class="enquiry-layout section-block" aria-labelledby="enquiry-title">
+      <div class="enquiry-copy"><p class="eyebrow"><span class="eyebrow-line"></span> Start with a question</p><h2 id="enquiry-title">Plan a trip with <em>us.</em></h2><p>Tell us what you love and we'll show a local confirmation right here. This student demo validates your form in the browser; it does not send or store personal information.</p><div class="enquiry-aside"><span aria-hidden="true">✳</span><p><strong>Good trips begin with curiosity.</strong><br>Heritage? Wildlife? A little of everything?</p></div></div>
+      <form id="enquiry-form" class="enquiry-form" novalidate>
+        <div class="form-heading"><span>Tell us a little about your plans</span><span aria-hidden="true">✳</span></div>
+        <div class="form-row">
+          <div class="form-field"><label for="name">Full name <span aria-hidden="true">*</span></label><input type="text" id="name" name="name" autocomplete="name" required minlength="3" placeholder="Your name"></div>
+          <div class="form-field"><label for="email">Email address <span aria-hidden="true">*</span></label><input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field"><label for="date">Travel date</label><input type="date" id="date" name="date"></div>
+          <div class="form-field"><label for="people">Travellers <span aria-hidden="true">*</span></label><input type="number" id="people" name="people" min="1" max="20" value="2" required></div>
+        </div>
+        <fieldset class="interest-fieldset"><legend>What are you interested in? <span aria-hidden="true">*</span></legend><div class="interest-options"><label><input type="checkbox" name="interest" value="Heritage"><span>Heritage</span></label><label><input type="checkbox" name="interest" value="Beach"><span>Beach</span></label><label><input type="checkbox" name="interest" value="Nature"><span>Nature</span></label><label><input type="checkbox" name="interest" value="Wildlife"><span>Wildlife</span></label></div></fieldset>
+        <div class="form-field"><label for="message">A note for us <span class="optional-label">Optional · 500 characters max</span></label><textarea id="message" name="message" rows="4" maxlength="500" placeholder="What would make this trip special?"></textarea><span class="character-count" id="message-count">0 / 500</span></div>
+        <div id="form-message" class="form-message" role="alert" aria-live="polite" tabindex="-1"></div>
+        <button class="button button-dark form-submit" type="submit">Check my enquiry <span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="index.html"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17m0 7c-8 0-12-5-12-13 8 0 12 4 12 12Zm0-4c0-8 4-12 12-12 0 8-4 12-12 12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 34h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Lanka <strong>Explorer</strong></span></a><p>Discover the Pearl of the Indian Ocean, one good stop at a time.</p><a class="footer-contact" href="mailto:hello@lankaexplorer.lk">hello@lankaexplorer.lk <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© 2026 Lanka Explorer · Mini Project</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

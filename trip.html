@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta name="description" content="Keep your saved Sri Lanka stops together and estimate the entry-fee budget for your group.">
+  <title>My Trip — Lanka Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Lanka Explorer home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17m0 7c-8 0-12-5-12-13 8 0 12 4 12 12Zm0-4c0-8 4-12 12-12 0 8-4 12-12 12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 34h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Lanka <strong>Explorer</strong></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false"><span class="menu-icon" aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><ul><li><a class="nav-link" href="index.html">Explore</a></li><li><a class="nav-link" href="destinations.html">Destinations</a></li><li><a class="nav-link trip-nav-link active" href="trip.html" aria-current="page">My Trip<span class="trip-count" aria-label="saved places"></span></a></li><li><a class="nav-link" href="about.html">About</a></li><li><button class="theme-toggle" type="button" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button></li></ul></nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell inner-page trip-page">
+    <section class="page-heading page-heading-compact" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Your island, your order</p>
+      <h1 id="page-title">My <em>Trip.</em></h1>
+      <p class="page-lead">Gather your saved stops, choose your group size and get a quick entry-fee estimate.</p>
+    </section>
+
+    <div class="trip-layout">
+      <section class="trip-main-panel" aria-labelledby="trip-list-title">
+        <div class="trip-panel-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> The route so far</p><h2 id="trip-list-title">Your saved <em>stops.</em></h2></div><span class="trip-spark" aria-hidden="true">✳</span></div>
+        <div id="trip-summary" class="trip-summary" role="status" aria-live="polite"><div class="loading"><span class="spinner" aria-hidden="true"></span><span>Putting your trip together…</span></div></div>
+        <div class="table-scroll" tabindex="0" aria-label="Scrollable trip destinations table">
+          <table id="trip-table">
+            <thead><tr><th scope="col">Destination</th><th scope="col">Category</th><th scope="col">Fee / person</th><th scope="col">LKR / person</th><th scope="col" aria-label="Remove"></th></tr></thead>
+            <tbody><tr><td colspan="5" class="no-results">Loading your saved destinations…</td></tr></tbody>
+            <tfoot><tr><th scope="row" colspan="2">Group total</th><td id="total-usd">USD 0</td><td id="total-lkr">—</td><td></td></tr></tfoot>
+          </table>
+        </div>
+        <div class="trip-table-actions"><p id="trip-note" class="table-note">Estimates cover listed entry fees only; transport, food and accommodation are not included.</p><button id="clear-trip" class="button button-danger-soft" type="button" hidden>Clear trip <span aria-hidden="true">×</span></button></div>
+      </section>
+
+      <aside class="trip-sidebar" aria-labelledby="budget-title">
+        <div class="traveller-card">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Make it yours</p>
+          <h2 id="budget-title">Who's <em>coming?</em></h2>
+          <p>Adjust the group size to see the total entry budget update.</p>
+          <label for="travellers">Number of travellers</label>
+          <div class="traveller-control"><button class="traveller-step" type="button" data-traveller-step="-1" aria-label="Remove one traveller">−</button><input type="number" id="travellers" name="travellers" min="1" max="20" value="1" inputmode="numeric"><button class="traveller-step" type="button" data-traveller-step="1" aria-label="Add one traveller">＋</button></div>
+          <p class="traveller-help">Choose 1–20 travellers. Your choice stays saved on this device.</p>
+          <div class="budget-divider"></div>
+          <div class="budget-caption"><span>Group entry estimate</span><span aria-hidden="true">↗</span></div>
+          <p id="budget-highlight" class="budget-highlight">USD 0</p>
+          <p id="budget-lkr-highlight" class="budget-lkr">LKR conversion loading…</p>
+          <p id="rate-note" class="rate-note">Exchange rate is fetched live and may change.</p>
+        </div>
+        <div class="trip-tip-card"><span aria-hidden="true">✳</span><p><strong>Good to know</strong><br>Park and monument fees can change. Confirm the current visitor rate before you go.</p></div>
+      </aside>
+    </div>
+    <div class="trip-bottom-cta"><p>Want to add another stop?</p><a class="text-link" href="destinations.html">Browse all destinations <span aria-hidden="true">↗</span></a></div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="index.html"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17m0 7c-8 0-12-5-12-13 8 0 12 4 12 12Zm0-4c0-8 4-12 12-12 0 8-4 12-12 12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 34h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Lanka <strong>Explorer</strong></span></a><p>Discover the Pearl of the Indian Ocean, one good stop at a time.</p><a class="footer-contact" href="mailto:hello@lankaexplorer.lk">hello@lankaexplorer.lk <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© 2026 Lanka Explorer · Mini Project</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="image" href="images/sigiriya.jpg" fetchpriority="high">
+  <meta name="description" content="Explore a Sri Lankan destination in detail, with local weather, entry-fee estimates and an interactive map.">
+  <title>Destination details — Lanka Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Lanka Explorer home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17m0 7c-8 0-12-5-12-13 8 0 12 4 12 12Zm0-4c0-8 4-12 12-12 0 8-4 12-12 12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 34h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Lanka <strong>Explorer</strong></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false"><span class="menu-icon" aria-hidden="true">☰</span></button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><ul><li><a class="nav-link" href="index.html">Explore</a></li><li><a class="nav-link active" href="destinations.html" aria-current="page">Destinations</a></li><li><a class="nav-link trip-nav-link" href="trip.html">My Trip<span class="trip-count" aria-label="saved places"></span></a></li><li><a class="nav-link" href="about.html">About</a></li><li><button class="theme-toggle" type="button" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button></li></ul></nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell inner-page details-page">
+    <a class="back-link" href="destinations.html"><span aria-hidden="true">←</span> All destinations</a>
+    <article id="destination" class="destination-detail" aria-live="polite">
+      <div class="loading"><span class="spinner" aria-hidden="true"></span><span>Loading destination…</span></div>
+    </article>
+
+    <div class="detail-actions"><button id="add-to-trip" class="button button-dark" type="button" hidden>Add to My Trip <span aria-hidden="true">＋</span></button><span id="trip-feedback" class="inline-feedback" role="status" aria-live="polite"></span></div>
+
+    <div class="detail-data-grid">
+      <section class="detail-panel weather-panel" aria-labelledby="weather-title">
+        <div class="panel-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Right now</p><h2 id="weather-title">Weather <em>check.</em></h2></div><span class="live-pill"><span></span> Live</span></div>
+        <div id="weather" class="weather-box" aria-live="polite"><div class="loading"><span class="spinner" aria-hidden="true"></span><span>Checking the local forecast…</span></div></div>
+        <p class="data-source">Weather data provided by Open-Meteo · local time in Sri Lanka.</p>
+      </section>
+      <section class="detail-panel location-panel" aria-labelledby="location-title">
+        <div class="panel-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Find your way</p><h2 id="location-title">On the <em>map.</em></h2></div></div>
+        <div id="map" class="map-frame" role="region" aria-label="Interactive map of this destination"><div class="loading"><span class="spinner" aria-hidden="true"></span><span>Loading map…</span></div></div>
+        <p class="map-attribution-note">Map data © OpenStreetMap contributors.</p>
+      </section>
+    </div>
+
+    <section class="detail-footnote"><span class="footnote-symbol" aria-hidden="true">✳</span><p>Entry fees are planning estimates, not official quotes. Always confirm opening times, permits and current prices before travelling.</p></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand brand-footer" href="index.html"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V17m0 7c-8 0-12-5-12-13 8 0 12 4 12 12Zm0-4c0-8 4-12 12-12 0 8-4 12-12 12Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 34h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Lanka <strong>Explorer</strong></span></a><p>Discover the Pearl of the Indian Ocean, one good stop at a time.</p><a class="footer-contact" href="mailto:hello@lankaexplorer.lk">hello@lankaexplorer.lk <span aria-hidden="true">↗</span></a></div>
+    <div class="footer-bottom"><span>© 2026 Lanka Explorer · Mini Project</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Lanka Explorer — GitHub Pages hosted link
+
+LIVE LINK: [Replace this line after deployment]
+Example: https://YOUR-GITHUB-USERNAME.github.io/lanka-explorer/
+
+GitHub username: [Add your GitHub username]
+Repository: [Add your repository name]
+
+How to publish:
+1. Upload the contents of the lanka-explorer folder to the root of a public GitHub repository.
+2. In GitHub, open Settings → Pages and set the source to GitHub Actions.
+3. Wait for the Pages workflow to finish in the Actions tab.
+4. Copy the live URL shown by GitHub and replace the placeholder above.
